@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="calculadora">
+        <div id="Container">
+            <input type="text" id='imprime' disabled= 'true'>
+        </div>
+        <div id="buttonContainer">    
+                <button id='uno' onclick='addNumeros("1")'>1</button>
+                <button id='dos' onclick='addNumeros("2")'>2</button>
+                <button id='tres' onclick='addNumeros("3")'>3</button>
+                <button id='multiplicar' onclick='addNumeros("*")'>*</button>
+                <button id='borrar'>&larr; </button>
+                <button id='cuatro' onclick='addNumeros("4")'>4</button>
+                <button id='cinco' onclick='addNumeros("5")'>5</button>
+                <button id='seis' onclick='addNumeros("6")'>6</button>
+                <button id='dividir' onclick='addNumeros("/")'>/</button>
+                <button id='igual' onclick='result()'>=</button>
+                <button id='siete' onclick='addNumeros("7")'>7</button>
+                <button id='ocho' onclick='addNumeros("8")'>8</button>
+                <button id='nueve' onclick='addNumeros("9")'>9</button>
+                <button id='mas' onclick='addNumeros("+")'>+</button><br>
+                <button id='cero' onclick='addNumeros("0")'>0</button>
+                <button id='punto' onclick='addNumeros(".")'>.</button>
+                <button id='menos' onclick='addNumeros("-")'>-</button>
+                
+                <button id="limpiar">C</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
